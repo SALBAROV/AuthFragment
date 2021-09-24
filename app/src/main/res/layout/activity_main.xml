@@ -59,6 +59,16 @@
             app:lottie_repeatCount="10000" />
 
         <Button
+            android:id="@+id/icon_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/simple_btn"/>
+
+        <Button
             android:id="@+id/jump"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

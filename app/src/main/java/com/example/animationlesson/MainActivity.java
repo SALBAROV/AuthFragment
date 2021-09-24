@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnJump;
     Button btnSimple;
     Button btnFlip;
+    Button btnIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
         btnJump = findViewById(R.id.jump);
         btnSimple = findViewById(R.id.simple_btn);
         btnFlip = findViewById(R.id.flip_btn);
+        btnIcon = findViewById(R.id.icon_btn);
         imageView = findViewById(R.id.image_view);
+
+
 
         btnJump.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +62,15 @@ public class MainActivity extends AppCompatActivity {
                 lottie.playAnimation();
             }
         });
+        btnIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lottie.setAnimation("icon.json");
+                lottie.playAnimation();
+            }
+        });
+
+
 
         imageView.setOnClickListener(new View.OnClickListener() {
 

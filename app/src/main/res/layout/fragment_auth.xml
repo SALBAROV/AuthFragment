@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".auth.AuthFragment" >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout_give"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/phone_number_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Номер телефона"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/cod_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Получить код"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_auth"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/code_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Смс код"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Потвердить"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+

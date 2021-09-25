@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "458589445357",
+    "project_id": "animationlesson-2b80a",
+    "storage_bucket": "animationlesson-2b80a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458589445357:android:d7df2e3adf7e06c6d380e4",
+        "android_client_info": {
+          "package_name": "com.example.animationlesson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458589445357-0nf45ham5bk9puc538k3oa0tt2uke7n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd4WVQ1EXB886OZgjQojpLZQnohcs0pi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458589445357-0nf45ham5bk9puc538k3oa0tt2uke7n3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

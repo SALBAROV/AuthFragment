@@ -1,6 +1,7 @@
 package com.example.animationlesson;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -18,6 +19,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.animationlesson.auth.AuthFragment;
 
 public class MainActivity extends AppCompatActivity {
     LottieAnimationView lottie;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnSimple;
     Button btnFlip;
     Button btnIcon;
+    private FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +40,11 @@ public class MainActivity extends AppCompatActivity {
         btnFlip = findViewById(R.id.flip_btn);
         btnIcon = findViewById(R.id.icon_btn);
         imageView = findViewById(R.id.image_view);
-
+        fragmentManager = getSupportFragmentManager();
+        if (savedInstanceState == null) {
+           getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, AuthFragment.class,null)
+           .commit();
+        }
 
 
         btnJump.setOnClickListener(new View.OnClickListener() {
@@ -120,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 doBounceAnimation(view);
             }
         });
+
     }
 
     private void doBounceAnimation(View targetView) {
